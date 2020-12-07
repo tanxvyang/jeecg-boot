@@ -68,6 +68,10 @@ public class ShiroConfig {
                 filterChainDefinitionMap.put(url,"anon");
             }
         }
+        //排除链接，不被shiro拦截
+        filterChainDefinitionMap.put("/order/orderPhone/**", "anon"); //cas验证登录
+
+
         // 配置不会被拦截的链接 顺序判断
         filterChainDefinitionMap.put("/sys/cas/client/validateLogin", "anon"); //cas验证登录
         filterChainDefinitionMap.put("/sys/randomImage/**", "anon"); //登录验证码接口排除

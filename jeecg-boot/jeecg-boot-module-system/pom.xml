@@ -39,6 +39,11 @@
 			<artifactId>jeecg-boot-module-demo</artifactId>
 			<version>${jeecgboot.version}</version>
 		</dependency>
+         <dependency>
+			<groupId>org.jeecgframework.boot</groupId>
+			<artifactId>jeecg-boot-module-testorder</artifactId>
+			<version>${jeecgboot.version}</version>
+		</dependency>
 
 
 	</dependencies>
